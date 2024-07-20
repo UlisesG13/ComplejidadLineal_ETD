@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complejidad en Estructuras Lineales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Complejidad en Estructuras Lineales</h1>
+    <div class="principal">
+        <div class="option">
+            <h2>Array</h2>
+            <button id='saveArray' class="but">Realizar Inserción al ArrayList</button>
+            <div class="info">
+                <button id="arrayBubble">Bubble Sort</button>
+                <label id="tiempoBubbleA">Bubble Sort: --</label>
+                <button id="arrayMerge">Merge Sort</button>
+                <label id="tiempoMergeA">Merge Sort: --</label>
+                <button id="arrayRadix">Radix Sort</button>
+                <label id="tiempoRadixA">Radix Sort: --</label>
+            </div>
+        </div>
+        <div class="option">
+            <h2>Linked List</h2>
+            <button id='saveList' class="but">Realizar Inserción a la LinkedList</button>
+            <div class="info">
+                <button id="listBubble">Bubble Sort</button>
+                <label id="tiempoBubbleL">Bubble Sort: --</label>
+                <button id="listMerge">Merge Sort</button>
+                <label id="tiempoMergeL">Merge Sort: --</label>
+                <button id="listRadix">Radix Sort</button>
+                <label id="tiempoRadixL">Radix Sort: --</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="chart1">
+            <canvas id="myChart" width="400" height="200"></canvas>
+            <canvas id="insertionsChart" width="400" height="200"></canvas>
+        </div>
+        <div class="chart2">
+            <canvas id="linkedListChart" width="400" height="200"></canvas>
+            <canvas id="linkedListInsertionsChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <script type="module" src="./src/controllers/Controller.mjs"></script>
+</body>
+
+</html>
